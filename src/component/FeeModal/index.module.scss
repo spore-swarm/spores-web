@@ -1,0 +1,156 @@
+.body {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  .container {
+    width: 100%;
+    max-width: 640px;
+    height: fit-content;
+    background: #161914;
+    border: 1px solid #586652;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media only screen and (max-width: 767px) {
+      padding: 20px;
+    }
+
+    .header {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .title {
+        font-family: UbuntuMono-Bold, sans-serif;
+        font-weight: normal;
+        font-size: 20px;
+        color: #8ac919;
+        line-height: 24px;
+        text-align: left;
+        font-style: normal;
+      }
+
+      .closeIcon {
+        width: 24px;
+        height: 24px;
+        fill: #fff;
+        cursor: pointer;
+      }
+    }
+
+    .text {
+      margin-top: 20px;
+      width: 100%;
+      font-family: UbuntuMono-Bold, sans-serif;
+      font-weight: normal;
+      font-size: 18px;
+      color: #ffffff;
+      line-height: 22px;
+      text-align: left;
+      font-style: normal;
+    }
+
+    .texts {
+      margin-top: 16px;
+      width: 100%;
+      font-family: UbuntuMono, sans-serif;
+      font-size: 16px;
+      color: #cad9c3;
+      line-height: 18px;
+      text-align: left;
+      font-style: normal;
+    }
+
+    .table {
+      width: 100%;
+      margin-top: 20px;
+      border: 1px solid #586652;
+      border-collapse: collapse;
+
+      thead {
+        tr {
+          width: 100%;
+          border: 1px solid #586652;
+
+          th {
+            border: 1px solid #586652;
+            padding: 12px;
+            font-family: UbuntuMono-Bold, sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            color: #ffffff;
+            line-height: 16px;
+            text-align: left;
+            font-style: normal;
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          border: 1px solid #586652;
+          width: 100%;
+
+          td {
+            vertical-align: top;
+            padding: 12px;
+            font-family: UbuntuMono, sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            color: #cad9c3;
+            line-height: 14px;
+            text-align: left;
+            font-style: normal;
+
+            &.tableList {
+              border-left: 1px solid #586652;
+              display: flex;
+              flex-direction: column;
+            }
+          }
+        }
+      }
+    }
+
+    .action {
+      margin-top: 40px;
+      width: 200px;
+      height: 48px;
+      background: linear-gradient(180deg, #ffdf02 0%, #467820 100%);
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5),
+        inset 0px 2px 0px 0px #ffffff;
+      border-radius: 16px;
+      border: 2px solid #000000;
+      cursor: no-drop;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .actionText {
+        font-family: UbuntuMono-Bold, sans-serif;
+        font-weight: normal;
+        font-size: 16px;
+        color: #ffffff;
+        line-height: 19px;
+        text-align: center;
+        font-style: normal;
+      }
+    }
+  }
+}

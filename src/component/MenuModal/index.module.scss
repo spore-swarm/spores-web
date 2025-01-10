@@ -1,0 +1,90 @@
+.body {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 666;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+
+  .header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      width: 91px;
+      height: 60px;
+      object-fit: contain;
+      object-position: center;
+    }
+
+    .closeIcon {
+      width: 32px;
+      height: 32px;
+      fill: #fff;
+      cursor: pointer;
+    }
+  }
+
+  .list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+
+    .item {
+      width: 100%;
+      height: 56px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+
+      .itemText {
+        font-family: UbuntuMono-Bold, sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        color: #ffffff;
+        line-height: 20px;
+        text-align: left;
+        font-style: normal;
+      }
+
+      .itemIcon {
+        width: 20px;
+        height: 20px;
+        fill: #fff;
+      }
+
+      .itemContainer {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        .itemIcons {
+          width: 24px;
+          height: 24px;
+          fill: #ffffff;
+        }
+
+        .itemTexts {
+          font-family: UbuntuMono-Bold, sans-serif;
+          font-weight: bold;
+          font-size: 20px;
+          color: #ffffff;
+          line-height: 20px;
+          text-align: left;
+          font-style: normal;
+        }
+      }
+    }
+  }
+}

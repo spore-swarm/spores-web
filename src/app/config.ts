@@ -1,0 +1,9 @@
+export const discordLink = "https://discord.com/invite/gRXy5mpFHz";
+export const telegramLink = "";
+export const daoLink = "https://dao.sporeswarm.com";
+export const githubLink = "https://github.com/spore-swarm";
+export const twitterLink1 = "https://x.com/justsay_ohno";
+export const twitterLink2 = "https://x.com/hioozeborn_ai";
+export const twitterLink3 = "https://x.com/hisaya_ai";
+export const twitterLink4 = "https://x.com/higrassian_ai";
+export const twitterLink5 = "https://x.com/hicat_ai";

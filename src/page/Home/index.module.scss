@@ -1,0 +1,131 @@
+.body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 0 60px 0;
+  background-image: url("../../asset/image/bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media only screen and (max-width: 767px) {
+    padding: 100px 0 60px 0;
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    max-width: 960px;
+
+    .bannerImage {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 960/640;
+      object-fit: contain;
+      object-position: center;
+    }
+
+    .bannerActions {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      gap: 40px;
+
+      .bannerAction {
+        width: 240px;
+        height: 48px;
+        border-radius: 16px;
+        border: 2px solid #000000;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5),
+          inset 0px 2px 0px 0px #ffffff;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: no-drop;
+        padding-left: 50px;
+
+        &:nth-of-type(1) {
+          background: linear-gradient(180deg, #5765f2 0%, #3543c9 100%);
+        }
+
+        &:nth-of-type(2) {
+          background: linear-gradient(180deg, #f03e8c 0%, #bf0000 100%);
+        }
+
+        &:nth-of-type(3) {
+          background: linear-gradient(180deg, #8bce2f 0%, #259c00 100%);
+        }
+
+        &:nth-of-type(4) {
+          background: linear-gradient(180deg, #ff8628 0%, #ff2f04 100%);
+        }
+
+        &:nth-of-type(5) {
+          background: linear-gradient(180deg, #ffffff 0%, #747474 100%);
+        }
+
+        &:nth-of-type(6) {
+          background: linear-gradient(180deg, #382e2c 0%, #1a1414 100%);
+        }
+
+        &.active {
+          cursor: pointer;
+        }
+
+        @media only screen and (max-width: 767px) {
+          height: 40px;
+          padding-left: 40px;
+        }
+
+        .bannerActionImage {
+          width: 64px;
+          height: 64px;
+          position: absolute;
+          left: 16px;
+          bottom: 0;
+          object-fit: contain;
+          object-position: center;
+
+          @media only screen and (max-width: 767px) {
+            width: 56px;
+            height: 56px;
+          }
+        }
+
+        .bannerActionText {
+          font-family: UbuntuMono-Bold, sans-serif;
+          font-weight: normal;
+          font-size: 18px;
+          color: #ffffff;
+          line-height: 22px;
+          text-align: left;
+          font-style: normal;
+
+          @media only screen and (max-width: 767px) {
+            font-size: 16px;
+            line-height: 16px;
+          }
+        }
+      }
+
+      @media only screen and (max-width: 767px) {
+        margin-top: 30px;
+        position: relative;
+        gap: 32px;
+      }
+    }
+  }
+}

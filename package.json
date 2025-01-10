@@ -1,0 +1,50 @@
+{
+  "name": "spores-web",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Official website of autonomous spores",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spore-swarm/spores-web.git"
+  },
+  "bugs": {
+    "url": "https://github.com/spore-swarm/spores-web/issues"
+  },
+  "homepage": "https://sporeswarm.com",
+  "dependencies": {
+    "@types/node": "^16.7.13",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.1.1",
+    "react-scripts": "5.0.1",
+    "sass": "^1.83.1",
+    "typescript": "^4.4.2",
+    "web-vitals": "^2.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "CI=false DISABLE_ESLINT_PLUGIN=true GENERATE_SOURCEMAP=false react-scripts build",
+    "build:test": "CI=false DISABLE_ESLINT_PLUGIN=true GENERATE_SOURCEMAP=false react-scripts build",
+    "test": "react-scripts test"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
